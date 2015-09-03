@@ -76,7 +76,7 @@ The standard Linux\* OS shipped on the Intel® Edison platform is based on Yocto
 
 <span id="_Toc417486207" class="anchor"></span>Figure . Building an image
 
-| ![](./media/image5.png) |
+| ![bsp-fig-1](https://cloud.githubusercontent.com/assets/10090748/9667039/5f8819f6-522e-11e5-9280-854c1e8ed6f0.png) |
 |-------------------------|
 
 The Intel® Edison BSP source package is the set of Yocto source files necessary to generate a Linux image ready to run on the Intel® Edison board. It contains:
@@ -362,7 +362,7 @@ bitbake virtual/kernel -c menuconfig
 
 <span id="_Toc417486208" class="anchor"></span>Figure 2 Linux kernel configuration
 
-| ![](./media/image6.png) |
+| ![bsp-fig-2](https://cloud.githubusercontent.com/assets/10090748/9667052/705b3b1e-522e-11e5-9d01-ca1b8c0db84c.png) |
 |-------------------------|
 
 When the configuration is completed, replace *defconfig* with *.config*, then rename it back to *defconfig*. We also suggest taking a backup of the *defconfig* file. Force bitbake to copy the modified *defconfig* file to the actual build directory. Then the new image with modified kernel is ready to build.
